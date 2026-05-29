@@ -4,7 +4,7 @@ setTimeout(() => {
 
     document.querySelector(".loading-screen").style.display = "none";
 
-}, 2500);
+}, 5000);
 
 /* MUSIC */
 
@@ -36,7 +36,7 @@ musicBtn.addEventListener("click", () => {
 document.querySelector(".secret-star")
 .addEventListener("click", () => {
 
-    alert("secret unlocked: you're genuinely one of my favorite people 🤍");
+    alert("you're genuinely one of my favorite people🤍 & thank you for being my friend Atiliaa");
 
 });
 
@@ -49,19 +49,19 @@ function showMessage(type){
     if(type === "sad"){
 
         output.innerText =
-        "bad days eventually pass. but your chaos somehow stays forever 🤍";
+        "Chat je akuu. I may not really know what to say, but i hope you know you’re appreciated more than you think. take care of yourself Atilia🤍";
     }
 
     if(type === "tired"){
 
         output.innerText =
-        "please sleep before turning into a clinically exhausted raccoon";
+        "Siapa suruh tidur lambat & scroll tiktok. Please go sleep";
     }
 
     if(type === "miss"){
 
         output.innerText =
-        "unfortunately for you, i'm always here";
+        "Skill issue";
     }
 }
 
@@ -75,7 +75,7 @@ cakeBtn.addEventListener("click", () => {
 
     document.getElementById("cake-message")
     .innerText =
-    "WISH ACCEPTED ✨🎂";
+    "WISH ACCEPTED✨🎂";
 
     createConfetti();
 });
@@ -109,5 +109,5 @@ function createConfetti(){
 
 window.onbeforeunload = function () {
 
-    return "you haven't finished being appreciated yet";
+    return "you haven't finished being appreciated yet, go back";
 };
