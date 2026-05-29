@@ -111,3 +111,27 @@ window.onbeforeunload = function () {
 
     return "you haven't finished being appreciated yet, go back";
 };
+
+function checkPassword(){
+
+    const input = document.getElementById("password-input").value;
+
+    const box = document.querySelector(".lock-box");
+
+    const correctPassword = "230507"; // CHANGE THIS
+
+    if(input === correctPassword){
+
+        document.getElementById("password-screen").style.display = "none";
+
+    } else {
+
+        document.getElementById("error-msg").innerText = "wrong password";
+
+        box.classList.add("shake");
+
+        setTimeout(() => {
+            box.classList.remove("shake");
+        },300);
+    }
+}
